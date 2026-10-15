@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#d7dbe2">
+<title>王者万象棋拆解洞察 · 图文专题</title>
+<style>
+:root{--ink:#222528;--muted:#74797d;--line:#dcdedc;--paper:#f4f4f2;--accent:#76694c}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;font-size:18px;background:var(--paper);color:var(--ink);font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.85}a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:pointer;border:1px solid var(--line);padding:9px 14px;background:transparent;color:inherit;border-radius:3px}button:hover{background:#e9eae7}button:disabled{opacity:.4;cursor:default}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:5px}.wrap{max-width:1440px;margin:auto;padding:0 64px}.top{position:sticky;top:0;z-index:20;background:#f4f4f2f5;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.top-inner{min-height:72px;display:flex;align-items:center;gap:26px}.brand{font-size:15px;font-weight:700;white-space:nowrap;letter-spacing:1px}.nav{display:flex;gap:16px;flex:1;font-size:13px;color:var(--muted)}.active{color:var(--accent)!important;font-weight:700}.top-actions{display:flex;gap:6px}.top-actions button{font-size:13px;padding:6px 9px}.hero{padding:88px 0 64px;border-bottom:1px solid var(--line);background:linear-gradient(125deg,#fff,#eeefed)}.eyebrow,.kicker{font-size:13px;letter-spacing:2px;color:var(--muted);text-transform:uppercase}.game-tag{display:inline-block;border:1px solid #bfc2bf;padding:3px 12px;font-size:14px;margin-bottom:24px}.hero h1{font-size:clamp(40px,calc(5vw + 2px),74px);line-height:1.18;letter-spacing:-2px;font-weight:600;margin:8px 0 26px}.hero h1 span{display:block;font-size:calc(.46em + 1.08px);letter-spacing:0;color:var(--muted);margin-top:18px}.hero-lead{max-width:750px;font-size:22px;line-height:1.8}.hero-foot{display:flex;gap:26px;flex-wrap:wrap;font-size:14px;color:var(--muted);margin-top:32px}.hero-foot a{color:var(--ink);border-bottom:1px solid}.overview{padding:64px 0 72px}.overview h2,.brief h2{font-size:30px;font-weight:500;margin:8px 0 28px}.quick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.quick-card{display:block;border-top:2px solid var(--ink);padding:22px 0 14px}.quick-card small{font-size:13px;color:var(--muted)}.quick-card h3{font-size:24px;font-weight:500;margin:12px 0}.quick-card p{color:#596065;font-size:16px;line-height:1.9}.quick-card .jump{display:block;margin-top:20px;font-size:14px}.quick-card:hover .jump{text-decoration:underline}.brief{background:#e8eae7;padding:48px;margin-top:48px}.brief-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px}.brief h3{font-size:14px;color:var(--muted);margin:0 0 12px;letter-spacing:2px}.brief p{margin:0;font-size:19px}.brief .core{border-top:1px solid #c7cbc6;margin-top:30px;padding-top:24px;font-size:16px}.notice{font-size:14px;color:var(--muted);margin:25px 0 0}.layout{display:grid;grid-template-columns:minmax(0,1fr);align-items:start}.section{padding-bottom:60px}.section-head{padding:35px 0 36px;border-top:1px solid #9fa5a3}.section-head h2{font-size:clamp(27px,calc(3vw + 2px),40px);font-weight:500;line-height:1.4;margin:14px 0}.section-head p{font-size:16px;color:var(--muted)}.paragraph{padding:40px 0 46px;border-top:1px solid var(--line)}.para-head{display:flex;align-items:baseline;gap:16px;margin-bottom:24px}.serial{font-family:Georgia,serif;font-size:30px;line-height:1;color:#8b908d}.type{font-size:12px;color:var(--muted)}.paragraph h3{font-size:26px;line-height:1.55;font-weight:500;margin:0 0 22px}.prose{font-size:18px;line-height:2;white-space:pre-line;margin:0;overflow-wrap:anywhere}.story-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:36px;align-items:start}.story-grid.reverse .story-copy{order:2}.story-grid.reverse .media{order:1}.media{margin:0;min-width:0}.media-open{display:block;width:100%;padding:0;border:1px solid #d1d5d1;text-align:left;overflow:hidden;background:#eceeeb}.media-open:hover{background:#e4e7e3}.empty-media{aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center;background:linear-gradient(145deg,#f1f3f0,#e5e8e3);color:#707771}.empty-media b{font-size:14px;letter-spacing:2px;border:1px solid #bdc3bc;padding:5px 12px;font-weight:500}.empty-media span{font-size:18px;margin:20px 0 8px;max-width:350px}.empty-media small{font-size:13px}.media img{display:block;width:100%;aspect-ratio:auto;height:auto;background:transparent}.media video{width:100%;display:block;aspect-ratio:16/9;object-fit:contain;background:#e7eae6}.media-caption{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;justify-content:space-between;font-size:13px;color:var(--muted);margin-top:12px}.media-caption button{padding:0;border:0;background:none;text-decoration:underline;font-size:13px}.media-meta{font-size:12px;color:var(--muted);margin:8px 0 0;line-height:1.8}.pullquote{margin:26px 0 0;padding:20px 28px;border-left:2px solid #92998f;background:#edefeb;font-size:20px;line-height:1.8}.static-note{font-size:12px;color:var(--muted);margin:12px 0 0}.static-flow{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:26px;font-size:15px}.static-flow span{padding:10px 14px;border:1px solid var(--line);background:#eff1ed}.static-flow i{font-style:normal;color:var(--muted)}.end{font-size:28px;font-weight:500;padding:35px 0 65px;line-height:1.7}.end small{display:block;font-size:14px;color:var(--muted);font-weight:400;margin-top:18px}footer{border-top:1px solid var(--line);padding:32px 0 46px;font-size:14px;color:var(--muted)}footer a{text-decoration:underline}footer p{margin:8px 0}.top-btn{position:fixed;right:22px;bottom:22px;background:#f4f4f2;z-index:10}.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--ink);color:white;max-width:90vw;padding:12px 20px;font-size:14px;z-index:60;opacity:0;pointer-events:none;transition:opacity .2s}.toast.visible{opacity:1}dialog{border:1px solid #bec4bc;border-radius:4px;padding:0;width:min(1080px,94vw);max-height:90vh;color:var(--ink);background:#f6f7f4}dialog::backdrop{background:#161a1bcc}.dialog-head{position:sticky;top:0;z-index:1;display:flex;align-items:center;gap:20px;justify-content:space-between;background:#f6f7f4;padding:18px 26px;border-bottom:1px solid var(--line)}.dialog-head h2{font-size:20px;line-height:1.5;margin:0;font-weight:500}.dialog-head button{font-size:24px;border:0;padding:0 10px}.dialog-body{padding:26px}.dialog-preview{background:#e6e9e3;margin-bottom:24px}.dialog-preview img,.dialog-preview video{display:block;width:100%;max-height:52vh;object-fit:contain}.dialog-preview .empty-media{aspect-ratio:16/9;max-height:35vh}.requirements{font-size:16px;line-height:1.9;margin:0}.requirements dt{color:var(--muted);font-size:13px;margin-top:18px}.requirements dd{margin:3px 0}.local-import{display:block;padding:20px 0;font-size:14px;border-top:1px solid var(--line);margin-top:24px}.local-import input{display:block;margin-top:12px;max-width:100%}.dialog-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:20px}.dialog-foot button{font-size:14px}.material-list{list-style:none;padding:0;margin:22px 0}.material-list li{border-top:1px solid var(--line);padding:16px 0}.material-list button{text-align:left;width:100%;border:0;padding:0;font-size:17px}.material-list small{display:block;color:var(--muted);font-size:13px;margin-top:7px}@media(max-width:1200px){.wrap{padding:0 32px}.top-inner{gap:18px}.nav{gap:10px}.story-grid{gap:24px}.prose{font-size:17px}.paragraph h3{font-size:24px}}
+@media(max-width:1100px){.nav{display:none}.top-actions{margin-left:auto}.layout{display:block}.hero{padding-top:62px}.quick-grid{gap:20px}.story-grid{gap:32px}.brief{padding:30px}}
+@media(max-width:700px){html{scroll-padding-top:90px}.wrap{padding:0 20px}.top-inner{min-height:66px;gap:10px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}.brand{font-size:13px}.top-actions button{font-size:12px;padding:5px 6px}.hero{padding:44px 0 36px}.hero h1{font-size:45px}.hero-lead{font-size:19px}.hero-foot{gap:14px}.overview{padding:40px 0}.quick-grid,.brief-grid,.story-grid{grid-template-columns:1fr}.quick-grid{gap:12px}.quick-card h3{font-size:22px}.brief{padding:24px;margin-top:28px}.brief-grid{gap:24px}.brief p{font-size:17px}.story-grid.reverse .story-copy,.story-grid.reverse .media{order:initial}.paragraph{padding:30px 0 36px}.paragraph h3{font-size:24px}.prose{font-size:17px}.pullquote{font-size:19px;padding:16px 20px}.section{padding-bottom:30px}.section-head{padding:28px 0}.para-head{margin-bottom:18px}.type{font-size:11px}.dialog-head,.dialog-body{padding:18px}.dialog-head h2{font-size:18px}.dialog-foot button{padding:7px 10px}.top-btn{right:12px;bottom:12px}.end{font-size:24px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.anim-ready .paragraph{opacity:1;transform:none}}
+@media print{.top,.top-btn,.toast,dialog,.media-caption button,.hero-foot a{display:none!important}body{background:white;color:#222}.wrap{max-width:none;padding:0}.layout{display:block}.hero{padding:20px 0;background:white}.hero h1{font-size:34px}.hero-lead{font-size:17px}.overview{padding:24px 0}.brief{padding:20px}.paragraph{break-inside:avoid;padding:20px 0}.section-head{break-after:avoid}.prose{font-size:14px;line-height:1.8}.paragraph h3{font-size:21px}.story-grid{display:block}.media{margin-top:18px;break-inside:avoid}.media-open{border:1px solid #ccc}.empty-media{aspect-ratio:auto;min-height:90px;padding:16px}.empty-media span{margin:10px 0;font-size:15px}.media img,.media video{max-height:240px}.anim-ready .paragraph{opacity:1;transform:none}.section{padding-bottom:20px}.pullquote{font-size:17px}.quick-card p{font-size:14px}footer{font-size:12px}.notice{font-size:12px}}
+
+
+@media screen{
+:root{--ink:#293749;--muted:#748296;--line:#d9e1e9;--paper:#edf1f5;--accent:#94733b;--champagne:#d5bc86}
+body{background:radial-gradient(ellipse at 0 10%,#fff9,transparent 45%),linear-gradient(135deg,#f3f6f9,#e8eef4 55%,#f2f4f7);font-family:"Microsoft YaHei UI","PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+::selection{background:#eadbb9;color:#293749}
+button{border-radius:10px;background:linear-gradient(145deg,#fff,#eff3f7);box-shadow:inset 0 1px 0 #fff;transition:background .2s,border-color .2s,box-shadow .2s}
+button:hover{background:#fcf8ef;border-color:#c5ac76;box-shadow:0 4px 14px #55677a10}
+.top{background:#f5f8fbeb;border-color:#dbe2e9;box-shadow:0 3px 25px #53657a09}
+.brand{letter-spacing:1.5px;color:#425166}.brand:before{content:"象";display:inline-grid;place-items:center;width:28px;height:28px;margin-right:10px;color:#8d713f;background:linear-gradient(145deg,#fff8e9,#ddc99e);border:1px solid #ceb986;border-radius:8px;font-size:17px;box-shadow:inset 0 1px 0 #fff}
+.nav a{padding:5px 0}.nav a.active{border-bottom:2px solid #b4955a}
+.hero{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 78% 35%,#fff 0,#fff0 45%),linear-gradient(125deg,#f8fafc,#dfe7ef 75%,#e9edf1);border-bottom:1px solid #cbd6e1;box-shadow:inset 0 -1px 0 #fff}
+.hero:before{content:"";position:absolute;z-index:-1;right:-90px;top:-170px;width:680px;height:680px;border:1px solid #bccad752;border-radius:120px;transform:rotate(35deg);box-shadow:0 0 0 65px #ffffff21,0 0 0 130px #ffffff16}
+.hero:after{content:"";position:absolute;z-index:-1;right:14%;top:100px;width:120px;height:120px;border-radius:28px;transform:rotate(15deg);background:linear-gradient(135deg,#fff8,#cbd7e740);border:1px solid #fff9;box-shadow:18px 22px 50px #6a81941c}
+.game-tag{border-color:#cdbb97;border-radius:7px;background:linear-gradient(135deg,#fffcf5,#ecdfc4);color:#8a6f3c;box-shadow:inset 0 1px 0 #fff;font-weight:600;padding:5px 13px;letter-spacing:1px}
+.hero h1{font-weight:850;letter-spacing:1px;color:#28384d;text-shadow:0 2px 0 #fff,0 8px 24px #59738d15}.hero h1 span{font-weight:600;letter-spacing:2px;color:#64778a;font-size:calc(.43em + 1.14px)}.hero-lead{color:#526679;font-weight:400}.hero-foot a{color:#94733b;border-color:#cab588}.eyebrow,.kicker{color:#9d8050;letter-spacing:2.2px}
+.overview h2,.brief h2,.section-head h2{font-weight:750;color:#314256;letter-spacing:.5px}.quick-grid{gap:20px}.quick-card{padding:26px 24px 22px;border:1px solid #d3dce5;border-radius:18px;background:linear-gradient(145deg,#ffffffed,#f7f9fbcc);box-shadow:inset 0 1px 0 #fff,0 10px 30px #50647a08;transition:box-shadow .2s,border-color .2s,transform .2s}.quick-card:hover{border-color:#c7b188;box-shadow:0 12px 30px #6e7c8c12;transform:translateY(-3px)}.quick-card h3{font-weight:700;font-size:23px;color:#34465b}.quick-card small{color:#a0885f}.quick-card p{color:#697b8d}.quick-card .jump{color:#94733b}
+.brief{background:linear-gradient(135deg,#fff,#edf2f7);border:1px solid #d1dce6;border-radius:22px;box-shadow:0 16px 40px #52677e09,inset 0 1px 0 #fff;position:relative}.brief:before{content:"";position:absolute;top:0;left:35px;right:35px;height:3px;background:linear-gradient(90deg,transparent,#cfb780,transparent)}.brief h3{color:#a08450}.brief p{color:#526578}.brief .core{border-color:#dae1e7}
+.section-head{border-top:1px solid #cbd6e1}.section-head .kicker{display:inline-block;background:#f8f3e9;border:1px solid #e0d3b8;padding:4px 10px;border-radius:6px}.section-head p{color:#7a8c9e}
+.paragraph{border-color:#d8e1e9}.paragraph h3{font-weight:700;color:#34465b;font-size:25px;letter-spacing:.3px}.serial{font-family:"Microsoft YaHei UI","PingFang SC",sans-serif;font-size:20px;font-weight:750;letter-spacing:1px;color:#ab8b50;background:linear-gradient(135deg,#fcf9f2,#e8dfcd);border:1px solid #d9c8a5;border-radius:8px;padding:7px 12px;box-shadow:inset 0 1px 0 #fff}.prose{color:#4e6074;line-height:2.05}.pullquote{border-color:#c4a66b;background:linear-gradient(110deg,#f6f0e3,#f5f8fa);border-radius:0 13px 13px 0;color:#80693f;font-weight:500}.static-flow span{background:linear-gradient(145deg,#fff,#edf2f7);border-color:#d4dfe9;border-radius:9px;color:#536c85;box-shadow:inset 0 1px 0 #fff}.static-flow i{color:#b69b68}
+.media-open{border-color:#cdd8e3;border-radius:12px;background:transparent;box-shadow:0 8px 24px #536a8110;overflow:hidden}.media-open:hover{background:transparent;border-color:#bfa673}.empty-media{background:linear-gradient(135deg,#f8fafc,#e3ebf3);color:#7c8fa2}.empty-media b{border-color:#bdcddd;border-radius:6px;background:#ffffff69;color:#698199}.media-caption,.media-meta{color:#8192a3}.media-caption button{color:#9b7c46;border-radius:0;box-shadow:none}.media video{background:transparent;border-radius:10px}.end{color:#8d7445;font-weight:700}footer{border-color:#d8e1e9;background:#f6f8fa80;color:#8192a3}.top-btn{background:linear-gradient(145deg,white,#e9eef5);border-color:#cbd7e2;color:#9b7c46;border-radius:12px;box-shadow:0 6px 20px #536a8115}.toast{background:#33475e;border:1px solid #536b83;border-radius:10px}
+dialog{background:#f5f8fb;border-color:#bdccda;border-radius:18px;box-shadow:0 30px 90px #20344940}dialog::backdrop{background:#26384ad1;backdrop-filter:blur(6px)}.dialog-head{background:#eef3f8;border-color:#d7e1ea}.dialog-head h2{color:#4a6077;font-weight:700}.dialog-preview{background:transparent;border-radius:10px;overflow:hidden}.dialog-preview .empty-media{border:1px solid #d4dfe9}.requirements dt{color:#a08450}.material-list li{border-color:#dce5ed}.material-list button{background:transparent;box-shadow:none}.material-list small{color:#8294a5}
+}
+@media screen and (max-width:700px){.brand:before{width:23px;height:23px;font-size:14px;margin-right:6px}.hero:before{right:-420px}.hero:after{right:-30px;top:70px;opacity:.4}.hero h1{font-size:44px;letter-spacing:0}.hero h1 span{letter-spacing:1px}.quick-card{padding:21px 20px}.brief{border-radius:16px}.paragraph h3{font-size:23px}.serial{font-size:17px;padding:6px 10px}}
+/* 默认连续正文；只有联动初始化完成后才启用固定展示窗。 */
+:root{--nav-height:72px;--media-height:360px}
+html{scroll-padding-top:calc(var(--nav-height) + 20px)}
+#report,.section,.chapter-scene,.chapter-stage,.story-stack,.story-copy{min-width:0}
+.chapter-stage{display:grid;grid-template-columns:minmax(0,45fr) minmax(0,55fr);gap:clamp(24px,4vw,60px);align-items:center}
+.sticky-media{min-width:0;margin:0;padding:0;border:0;background:transparent;box-shadow:none}
+.media-window{display:flex;align-items:center;justify-content:center;min-width:0;max-height:var(--media-height)}
+.sticky-media .media img,.sticky-media .media video{display:block;width:auto;height:auto;max-width:100%;max-height:var(--media-height);object-fit:contain;aspect-ratio:auto;margin:0 auto}
+.neutral-cover{min-height:110px;max-height:var(--media-height);width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;background:linear-gradient(145deg,#f8fafc,#e3eaf1);border:1px solid #d4dfe9;border-radius:12px;color:#536579}
+.neutral-cover span{font-size:42px;color:#a1afbd;line-height:1.2;margin-bottom:12px}
+.neutral-cover h3{font-size:22px;font-weight:500;margin:0;line-height:1.6}
+.story-stack .paragraph{min-height:0;padding:24px;border-radius:12px;margin:0}
+.story-stack .prose{font-size:18px}
+.print-media{display:none}
+@keyframes media-enter{from{opacity:.65}to{opacity:1}}
+.media-window.is-changing{animation:media-enter 1s ease}
+@media(max-width:1100px){.nav{display:flex;flex-wrap:wrap;order:3;flex-basis:100%;gap:4px 16px;padding-bottom:6px}.top-inner{flex-wrap:wrap;padding-top:8px;gap:8px 16px}.nav a{padding:2px 0}}
+@media screen{
+body{zoom:1.25}
+.scenes-ready .chapter-scene{position:relative;height:var(--scene-height)}
+.scenes-ready .chapter-stage{position:sticky;top:calc(var(--nav-height) + 12px);height:var(--stage-height);z-index:5}
+.scenes-ready .story-stack{position:relative;display:grid;min-height:0;isolation:isolate}
+.scenes-ready .story-stack .paragraph{grid-area:1/1;position:absolute;inset:0 0 auto;max-height:var(--copy-height);overflow-y:auto;opacity:0;visibility:hidden;pointer-events:none;background:#f5f8fb;box-shadow:inset 3px 0 #c5ad7c;transition:opacity 1s ease,visibility 0s linear 1s;scrollbar-gutter:stable;overflow-wrap:anywhere}
+.scenes-ready .story-stack .paragraph.is-current{position:relative;inset:auto;opacity:1;visibility:visible;pointer-events:auto;z-index:1;transition:opacity 1s ease,visibility 0s}
+.scenes-ready .chapter-scene .print-media{display:none}
+.story-stack .paragraph:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+}
+@media(max-width:800px){
+.chapter-stage{grid-template-columns:1fr;gap:12px;align-content:center}.sticky-media{padding:0;border-radius:0}.neutral-cover{padding:12px}.neutral-cover span{font-size:28px;margin-bottom:6px}.neutral-cover h3{font-size:17px}
+.story-stack .paragraph{padding:18px 16px}.story-stack .prose{font-size:17px}.section-head{padding:28px 0}.top-actions{flex-wrap:wrap}
+}
+@media(prefers-reduced-motion:reduce){.media-window.is-changing{animation:none}.scenes-ready .story-stack .paragraph{transition:none}}
+@media print{
+.chapter-scene{height:auto!important}.chapter-stage,.story-stack{display:block!important;position:static!important}.sticky-media{display:none!important}.story-stack .paragraph{position:static!important;max-height:none!important;overflow:visible!important;visibility:visible!important;pointer-events:auto!important;min-height:0;margin:0;padding:20px 0;box-shadow:none;background:none;opacity:1!important;transform:none;border-radius:0;break-inside:auto}.story-stack .prose{font-size:14px}
+.print-media{display:block;margin:18px 0;break-inside:avoid}.print-media img,.print-media video{display:block;width:auto;height:auto;max-width:100%;max-height:260px;object-fit:contain;aspect-ratio:auto}.print-media .empty-media{min-height:0}
+}
+
+@media screen{
+:root{--ink:#303745;--muted:#737c8a;--line:#c8cdd4;--paper:#e2e4e8;--accent:#967944}
+body{background:radial-gradient(ellipse at 10% 5%,#f8f8fa85,transparent 48%),radial-gradient(ellipse at 90% 60%,#aeb6c329,transparent 55%),linear-gradient(135deg,#e9eaed,#d7dbe2 52%,#e4e5e9);color:var(--ink)}
+.top{background:#e5e7ebed;border-color:#c6cbd2;box-shadow:0 3px 20px #454d6012,inset 0 1px 0 #ffffff8c}
+.hero{background:radial-gradient(ellipse at 78% 35%,#f6f6f88c,transparent 48%),linear-gradient(125deg,#ececef,#c9cfd9 75%,#d9dce3);border-color:#b7bfcb;box-shadow:inset 0 -1px 0 #f7f7fa80}
+.hero:before{border-color:#a4adbd60;box-shadow:0 0 0 65px #ffffff15,0 0 0 130px #ffffff0c}.hero:after{background:linear-gradient(135deg,#eef0f58c,#aeb8ca45);border-color:#f4f4f780;box-shadow:18px 22px 50px #48546926}
+.hero h1{color:#333e52;text-shadow:0 1px 0 #ffffffb3,0 8px 24px #4e596b14}.hero h1 span,.hero-lead{color:#586477}.hero-foot,.section-head p{color:#75808f}
+.quick-card{background:linear-gradient(145deg,#f1f2f5ed,#dfe3e8e6);border-color:#c5cbd4;box-shadow:inset 0 1px 0 #ffffff9c,0 10px 30px #3e4a5d0d}.quick-card p{color:#677283}.quick-card h3,.section-head h2,.paragraph h3{color:#384457}
+.brief{background:linear-gradient(135deg,#f0f1f4,#dce1e8);border-color:#bfc7d2;box-shadow:0 16px 40px #3e4a5c10,inset 0 1px 0 #ffffffa6}.brief p{color:#576477}.brief .core{border-color:#c9ced6}
+.section-head,.paragraph{border-color:#c9ced6}.section-head .kicker{background:linear-gradient(135deg,#ede8dd,#dcd4c2);border-color:#c7b792;color:#8e7449}
+.scenes-ready .story-stack .paragraph{background:linear-gradient(125deg,#eeeff2f5,#dce1e8f2);box-shadow:inset 3px 0 #bca16c,inset 0 1px 0 #ffffff80,0 8px 24px #4552670b}.prose{color:#535f72}
+.sticky-media .media img,.sticky-media .media video{outline:2px solid #b59555;outline-offset:2px;border-radius:10px;box-shadow:0 0 0 5px #e9d8af,0 0 0 7px #a88a506b,0 -3px 0 5px #fff4d7b3,0 7px 0 5px #80673766,0 14px 20px #3b435132,0 28px 52px #36415347,0 40px 78px #48546626}
+.neutral-cover{background:linear-gradient(145deg,#e9ecf0,#cdd4de);border-color:#bda16c;color:#59667a;box-shadow:inset 0 1px 0 #ffffff80}.neutral-cover span{color:#9ca5b4}
+.game-tag,.serial{background:linear-gradient(135deg,#eee6d4,#d7c8a6);border-color:#bdab80;color:#8c7140;box-shadow:inset 0 1px 0 #fff9}.pullquote{background:linear-gradient(110deg,#e8e1d2,#e2e5e9);color:#826c44}.static-flow span{background:linear-gradient(145deg,#ebedf1,#dbe1e8);border-color:#c4ccd7;color:#5c6b80}
+footer{background:#dce0e68c;border-color:#c5cbd4;color:#788392}.top-btn{background:linear-gradient(145deg,#f0f1f4,#ccd4df);border-color:#b7c1cf;color:#927747;box-shadow:inset 0 1px 0 #fff8,0 6px 20px #43516820}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap top-inner"><a class="brand" href="#home">专题 / 王者万象棋</a><nav class="nav" aria-label="专题章节"></nav></div></header>
+<main id="home">
+<div class="hero"><div class="wrap"><div class="game-tag">王者万象棋 · 拆解洞察</div><div class="eyebrow">GAME INSIGHT / 图文专题</div><h1>王者万象棋<span>错位竞争，而非正面替代</span></h1><p class="hero-lead">万象棋用养成反馈替代部分端游自走棋的计算深度，降低硬核门槛，以适配移动端碎片场景。</p><div class="hero-foot"><span>作者：钟振祥</span><a href="#overview">三分钟速览 ↓</a><a href="#s1">进入专题 ↓</a></div></div></div>
+<div class="wrap overview" id="overview"><div class="kicker">READ IN 3 MINUTES</div><h2>三分钟速览</h2><div class="quick-grid"><a class="quick-card" href="#p16"><small>01 / 定位</small><h3>错位竞争，而非正面替代</h3><p>用 IP 认知加机制差异化，切入“轻度用户 + 王者存量”。多数改动都在降低计算与记忆负担。</p><span class="jump">进入定位分析 ↗</span></a><a class="quick-card" href="#s2"><small>02 / 机制与 AI</small><h3>养成反馈与陪伴引导</h3><p>体验从“集卡”，变成了“搭齿轮”。灵宝 AI 采用朋友式陪伴，但具体怎么选仍由玩家决定。</p><span class="jump">进入机制与新手体验 ↗</span></a><a class="quick-card" href="#s6"><small>03 / 风险与迁移</small><h3>容易进入，不代表容易转向</h3><p>内容更新存在跟不上玩法消耗的风险。做减法要砍在认知成本上，而不是决策数量上。</p><span class="jump">进入风险与迁移启示 ↗</span></a></div><div class="brief" id="brief"><div class="kicker">结论 / 启发 / 核心玩法</div><h2>从机制分析，回到设计原则</h2><div class="brief-grid"><div><h3>结论</h3><p>核心是错位竞争，而不是正面替代。但降低负担，并不自动解决单局偏长问题。</p></div><div><h3>启发</h3><p>降低入门门槛，不等于降低深度。做减法要砍在认知成本上，而不是决策数量上。</p></div></div><p class="core"><b>核心玩法</b><br>依靠棋手、棋子与锦囊牌的配合提升等级：体验从“集卡”，变成了“搭齿轮”。</p></div></div>
+<div class="wrap layout"><div id="report">
+<section class="section" id="s1"><header class="section-head"><h2>品类前提：为什么是王者万象棋？</h2></header>
+<article class="paragraph" id="p01"><h3>自走棋的门槛，首先是 IP 门槛</h3><p class="prose">自走棋有制作门槛，也是高度依赖 IP 的品类，可视为围绕 IP 运营推出的一种玩法。从 Dota 自走棋，到云顶之弈、金铲铲，背后都依靠大 IP。大 IP 的天然优势，是降低玩家的认知成本，并在起步时拥有一定的粉丝基础。</p></article>
+<article class="paragraph" id="p02"><h3>熟悉英雄，才能更快理解棋子</h3><p class="prose">王者万象棋的角色技能设计基于王者荣耀。熟悉王者的玩家，可利用已有的刺客、AD 等角色定位认知，降低学习成本，并有助于提高留存率。其优势不是无需学习新规则，而是角色定位已有认知基础。</p><figure class="media"><img src="./img/左右对照拼接图_等高.png" alt="吕布：王者荣耀与万象棋技能对照"></figure></article></section>
+<section class="section" id="s2"><header class="section-head"><h2>与其他自走棋的机制差异</h2></header>
+<article class="paragraph" id="p04"><h3>从凑羁绊，转向棋手与棋子的配合</h3><p class="prose">对比云顶之弈、金铲铲，万象棋加入了棋手系统，棋手技能可以影响战场。棋子不再只是按传统自走棋的方式凑羁绊，而是通过不同棋子的效果，与棋手技能配合构筑阵容，再提升棋子等级，形成一种养成模式。</p></article>
+<article class="paragraph" id="p05"><h3>自走棋框架下的肉鸽式养成</h3><p class="prose">万象棋常被概括为金铲铲与炉石酒馆战棋融合的自走棋。其玩法更接近自走棋框架下的肉鸽式养成：棋手升级给出的天赋三选一，与肉鸽升级三选一结构相似；养成方式转为棋子等级成长，使体验重心从自走棋的策略博弈，移向肉鸽式的数值养成。</p><figure class="media"><img src="./img/屏幕截图 2026-10-12 144251.png" alt="棋手升级：天赋三选一"></figure></article>
+<article class="paragraph" id="p06"><h3>阵营是地基，协同养成才是主体</h3><p class="prose">数值养成有助于强化成长感知与成就反馈。镜头调度、高光动作和特效进一步强化观感。阵容成型不再主要是凑够羁绊数量，而是把阵营作为地基，依靠棋手、棋子与锦囊牌的配合提升等级：体验从“集卡”，变成了“搭齿轮”。</p></article>
+<article class="paragraph" id="p08"><h3>反馈从“抽到关键牌”，移到“养到节点”</h3><p class="prose">传统自走棋的关键反馈，是抽到关键牌的瞬间，主要靠运气；万象棋把反馈重心移到养成节点，主要靠投入。前者是随机抽卡反馈，后者是养成积累反馈。后者可能降低随机性带来的负面情绪，但需要更长的对局来兑现，也可能是单局时长难以缩短的原因之一。</p></article>
+<article class="paragraph" id="p09"><h3>装备更自由，代价是部分深度</h3><p class="prose">装备可以随意切换、拆卸，小件可以直接合成成装。对比金铲铲需要两个小件合成、拆卸也有成本，万象棋降低了记忆与操作成本。但策略深度、耐玩性和玩家可开发的空间，也可能一起降低。</p></article>
+<article class="paragraph" id="p10"><h3>棋手不是头像，而是战术模板</h3><p class="prose">棋手不只是头像，而是带有全局技能、等级、专属天赋和秘技任务的角色，直接影响本局的玩法走向。棋手系统本质上，是把角色做成一个战术模板，让开局选择不只是选外观，而是选择一套后续构筑方向。</p><figure class="media"><img src="./img/屏幕截图 2026-10-12 144158.png" alt="棋手能力与秘技任务"></figure></article>
+<article class="paragraph" id="p11"><h3>选秀变拍卖：主动权与弱势补偿共存</h3><p class="prose">传统自走棋选秀，让低血量玩家优先挑选，对劣势方友好；优势方则需要等待，所需卡牌也可能被其他玩家先选走。万象棋改成拍卖会：所有人同时出价，价高者得，竞拍失败也不扣能量。
+这一设计减少优势方被动等待，又增加了心理博弈。竞拍的能量进入分红池，血量越低分得越多，为弱势方提供补偿。</p><figure class="media"><img src="./img/屏幕截图 2026-10-12 144622.png" alt="拍卖出价与分红结算"></figure></article>
+<article class="paragraph" id="p12"><h3>首次推荐与情感连接</h3><p class="prose">万象棋用 AI 陪伴引导与新手剧本承接新手。第一次对局预设了三套阵容剧本，并读取玩家王者荣耀账号里英雄熟练度或战力的 TOP5，赋予阵营权重，再据此选择灵宝推荐的阵容剧本。熟悉或偏好的英雄，有助于提高推荐阵容的接受度，初步建立情感连接。</p><figure class="media"><img src="./img/屏幕截图 2026-10-12 154805.png" alt="灵宝第一次阵容推荐"></figure></article>
+<article class="paragraph" id="p13"><h3>无账号默认三分，突出首局成长反馈</h3><p class="prose">如果没有王者账号，则默认推荐三分。在低阻力的新手剧本环境里，三分阵容有助于展示成长性与观赏性。剧本默认最后培养吕布，吕布到 100 级后的技能镜头变化，可强化成长节点的视觉反馈。</p><figure class="media"><video playsinline muted loop preload="metadata" src="./img/bili_video_1791789895511.mp4" aria-label="吕布成长与技能镜头"></video></figure></article>
+<article class="paragraph" id="p14"><h3>动态供给，而非固定操作节点</h3><p class="prose">传统新手剧本大多采用固定逻辑，安排特定内容出现在固定节点。万象棋采用动态安排，保留自主操作，通过伪随机动态供给维持体验一致性。</p><figure class="media"><img src="./img/屏幕截图 2026-10-10 114319.png" alt="动态供给与新手构筑"></figure></article>
+<article class="paragraph" id="p15"><h3>灵宝陪伴提示，保留自主选择</h3><p class="prose">相较传统强引导，灵宝 AI 采用朋友式陪伴，用口语和光环闪动提醒，但具体怎么选仍由玩家决定。玩家无需点击指定位置才能继续操作。提示用于解释棋子效果，保留理解后的自主选择，有助于降低对强制教程的抵触。</p><figure class="media"><video playsinline muted loop preload="metadata" src="./img/bili_video_1791792438743(1).mp4" aria-label="灵宝陪伴提示与自主操作"></video></figure></article>
+<article class="paragraph" id="p16"><h3>错位竞争，而非正面替代</h3><p class="prose">王者万象棋不是再做一个金铲铲，而是用 IP 认知加机制差异化，切入“轻度用户 + 王者存量”。定位与改动方向自洽：多数改动都在降低计算与记忆负担。
+自走棋用户可能存在重合，但玩法预期不同。万象棋用养成反馈替代部分端游自走棋的计算深度，降低硬核门槛，以适配移动端碎片场景。核心是错位竞争，而不是正面替代；这也类似王者荣耀降低端游 MOBA 的硬核门槛来适配移动用户的路径。但降低负担，并不自动解决单局偏长问题。</p></article></section>
+<section class="section" id="s3"><header class="section-head"><h2>系统减负：选择、经济与装备</h2></header>
+<article class="paragraph" id="p17"><h3>AI 推荐与选择提示</h3><p class="prose">AI 的阵容推荐和选择提示，有助于减少决策起步时的负担。辅助决策效果仍受阵容理解、操作与对局环境影响，不能保证段位提升。</p></article>
+<article class="paragraph" id="p18"><h3>经济做减法，削弱领先者复利</h3><p class="prose">能量收入采用每回合固定收入，取消利息，减少储蓄带来的复利优势。卖出通常只回收 1 能量；连胜与连败奖励也取消。整体方向是削弱领先者的复利效应，让玩家减少存钱收益、连胜连败等经济计算。</p></article>
+<article class="paragraph" id="p19"><h3>装备做减法，取消合成树</h3><p class="prose">小件直接合成成装，可以随意拆卸，没有传统合成树。减负对象是配方记忆与操作成本；易用性提升并不代表策略深度没有损失。</p></article></section>
+<section class="section" id="s4"><header class="section-head"><h2>外观、收藏与身份消费</h2></header>
+<article class="paragraph" id="p20"><h3>不卖战斗属性，卖外观表现</h3><p class="prose">所有付费内容均为外观，不提供数值或战斗属性加成。付费点包括英雄或棋手皮肤、专属棋盘、头像边框、交互动效、定制收藏卡、称号和攻击特效。
+棋手皮肤主要通过直购与活动抽奖，棋盘一般通过直购与抽奖夺宝获得，估算典藏皮肤抽取保底约为 1560 元，与金铲铲价格接近。</p><figure class="media"><img src="./img/Screenshot_2026-10-12-16-22-44-827_com.tencent.tmgp.osgame.jpg" alt="皮肤与棋盘外观展示"></figure></article>
+<article class="paragraph" id="p21"><h3>交易行，让特别商品形成流通市场</h3><p class="prose">交易行用于流通特别商品，例如棋盘编号、卡牌的卡面动画升级和部分小道具，商品价格随市场浮动。玩家上架需要支付费用，具有手续费性质。
+官方还会发布实物周边拍卖，使用游戏内钻石货币。交易行可作为游戏内资源与道具的调控系统。</p><figure class="media"><img src="./img/Screenshot_2026-10-12-16-22-14-787_com.tencent.tmgp.osgame.jpg" alt="交易行：商品与上架费用"></figure></article>
+<article class="paragraph" id="p22"><h3>限定编号、颜色与款式，强化身份识别</h3><p class="prose">万象棋的商业化逻辑，与潮玩和卡牌盲盒相似：利用限定的特殊编号、颜色、款式区分品阶，让不同付费程度的玩家呈现明显身份标识。例如特殊棋盘编号 66668888，可强化稀缺性与辨识度。</p><figure class="media"><img src="./img/Screenshot_2026-10-12-16-21-39-124_com.tencent.tmgp.osgame.jpg" alt="编号、品阶与身份表达"></figure></article>
+<article class="paragraph" id="p23"><h3>VIP 权益逐级放大身份表达</h3><p class="prose">VIP 系统也围绕身份表达搭建：V4 之前主要是小道具；V4 可定制个人 ID 后两位，V5 有专属皮肤，V6 有名片，V8 将 ID 定制扩展到四位并可组队分享皮肤，V10 则有棋盘共享与专属棋盘。
+游戏里 1 元等于 10 积分，V10 需要 20 万积分，按此比例折算是 2 万元。</p><figure class="media"><img src="./img/Screenshot_2026-10-12-16-23-22-898_com.tencent.tmgp.osgame.jpg" alt="VIP 权益与积分说明"></figure></article></section>
+<section class="section" id="s5"><header class="section-head"><h2>日常体验中的设计取舍</h2></header>
+<article class="paragraph" id="p25"><h3>金黄提示替代红点：视觉统一与发现成本</h3><p class="prose">大厅采用潮玩风格与银白灰 UI，以金黄色提示替代红点，有助于保持视觉统一。
+柔和提示也可能增加发现成本，需要兼顾视觉协调与提醒的可发现性。</p><figure class="media"><img src="./img/Screenshot_2026-10-12-16-20-55-419_com.tencent.tmgp.osgame.jpg" alt="银白大厅与金黄提示"></figure></article>
+<article class="paragraph" id="p26"><h3>灵宝统一入口，补足提示触达</h3><p class="prose">大厅中央设置灵宝提示，可一键跳转活动并提示可领取的奖励。每个人物也对应一个系统入口，点击即可跳转，有助于缩短入口查找路径。
+后续版本内容持续叠加，可能增加大厅的信息密度与入口管理成本。</p><figure class="media"><img src="./img/屏幕截图 2026-10-12 164130.png" alt="灵宝统一奖励入口与系统跳转"></figure></article>
+<article class="paragraph" id="p27"><h3>王中王：无需小号的段位重启</h3><p class="prose">上王者之后出现王中王系统，让玩家重新从低段位开始晋级，产生类似小号的效果。该机制可能分流不希望持续参与高段位对局的娱乐用户，也可支持与朋友组队，减少因段位差距而另建账号的需求。</p><figure class="media"><img src="./img/Screenshot_2026-10-12-16-21-07-982_com.tencent.tmgp.osgame.jpg" alt="王中王入口与重新爬升"></figure></article>
+<article class="paragraph" id="p28"><h3>娱乐模式，进一步强化成长反馈</h3><p class="prose">娱乐副玩法每两周轮换一个，另有常驻的钻石狂潮。相对常规对局，钻石狂潮节奏更快、养成更容易，进一步强化了成长反馈。</p><figure class="media"><img src="./img/Screenshot_2026-10-12-16-23-02-940_com.tencent.tmgp.osgame.jpg" alt="钻石狂潮：入口与成长节奏"></figure></article></section>
+<section class="section" id="s6"><header class="section-head"><h2>短期体验优势，与长线风险并存</h2></header>
+<article class="paragraph" id="p30"><h3>优势：认知、引导、新鲜感与关系链</h3><p class="prose">王者 IP 有助于降低认知门槛，AI 引导有助于减少入门阻力，但不代表完全不需要学习新规则。差异化玩法提供新鲜感，打通王者荣耀社交体系则可利用已有关系链。</p></article>
+<article class="paragraph" id="p31"><h3>时长仍偏长，存在内容消耗风险</h3><p class="prose">原稿描述单局时长比金铲铲短，但仍偏长，具体时长尚未核验。策略空间缩减可能影响耐玩性；当有效阵容选择有限时，内容更新存在跟不上玩法消耗的风险。</p></article>
+<article class="paragraph" id="p32"><h3>棋手绑定，让平衡与失败归因更复杂</h3><p class="prose">棋手与阵容绑定较深，可能增加平衡调整难度。偏即时战力与偏长线运营的棋手，可能拉开强度；选择非强势棋手时，也可能增加失败挫败感。不同成长时机的路线，不一定能靠简单数值调整平衡。</p></article>
+<article class="paragraph" id="p33"><h3>换阵成本高，容错前置到开局</h3><p class="prose">对比金铲铲，万象棋换阵成本更高。一旦开始培养某个方向，中途改道成本较高，容错空间可能更多集中在开局几回合的选择中。容易进入，不代表中途容易转向。</p></article>
+<article class="paragraph" id="p34"><h3>打通社交，不等于形成局内合作</h3><p class="prose">组队的有分同享主要提供分数兜底，不同于金铲铲组排通过互相给牌形成玩法联动；万象棋里组队玩家仍是对手，局内协作有限。
+打通关系链不等于形成持续的局内合作。若内容消耗、平衡与转型问题未得到改善，长线运营存在风险。</p></article></section>
+<section class="section" id="s7"><header class="section-head"><h2>可迁移的设计经验</h2></header>
+<article class="paragraph" id="p35"><h3>把负面归因，从运气移向成长投入</h3><p class="prose">从运气反馈转向养成反馈，将关键反馈从“抽到关键牌”移到“养到节点”，有助于减少对运气或系统偏向的负面归因。代价是需要更长对局来兑现，类似肉鸽游戏常见的二三十分钟单局。</p></article>
+<article class="paragraph" id="p36"><h3>做减法，要砍认知成本而不是决策数量</h3><p class="prose">降低入门门槛，不等于降低深度。取消利息、装备统一合成、卡价统一，削减的是记忆和计算负担；应保留并加强阵容与时机决策。做减法要砍在认知成本上，而不是决策数量上。
+理想的减负方向，不代表产品已经完全实现了理想，仍需评估实际策略深度是否受损。</p></article>
+<article class="paragraph" id="p37"><h3>集成奖励入口，统一提醒管理</h3><p class="prose">相比分散的红点，集成奖励领取入口有助于减少提示分散与逐项查找的负担。提醒可以统一管理，但也要兼顾柔和提示的可发现性。</p></article></section>
+</div></div>
+<noscript><div class="wrap">当前为连续正文模式；启用 JavaScript 可使用章节滚动联动与顶部导航。</div></noscript>
+</main>
+<footer><div class="wrap"><p>王者万象棋 · 拆解洞察</p></div></footer>
+<button class="top-btn" type="button" id="topButton" aria-label="返回顶部">↑</button><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<dialog id="mediaDialog" aria-labelledby="dialogTitle"><div class="dialog-head"><h2 id="dialogTitle">素材需求</h2><button type="button" id="dialogClose" aria-label="关闭素材详情">×</button></div><div class="dialog-body" id="dialogBody"></div></dialog>
+<script id="report-data" type="application/json">
+{"meta":{"title":"王者万象棋拆解洞察","source":"用户提供的演讲稿提取文本","version":"逐段交互版 2.0","policy":"按原稿顺序分解长段，每段正文完整可见；图解为解释性示意，规则与数值未独立核验"},"sections":[
+{"id":"s1","number":"01","short":"品类前提","title":"品类前提：为什么是王者万象棋？","intro":"从 IP 的认知优势，理解自走棋的品类前提。","paragraphs":[
+{"id":"p01","source":"1 · ①","title":"自走棋的门槛，首先是 IP 门槛","kind":"品类分析","visual":"ip","text":"自走棋有制作门槛，也是高度依赖 IP 的品类，可视为围绕 IP 运营推出的一种玩法。从 Dota 自走棋，到云顶之弈、金铲铲，背后都依靠大 IP。大 IP 的天然优势，是降低玩家的认知成本，并在起步时拥有一定的粉丝基础。"},
+{"id":"p02","source":"1 · ②","title":"熟悉英雄，才能更快理解棋子","kind":"认知与留存分析，未提供留存数据","visual":"recognition","text":"王者万象棋的角色技能设计基于王者荣耀。熟悉王者的玩家，可利用已有的刺客、AD 等角色定位认知，降低学习成本，并有助于提高留存率。其优势不是无需学习新规则，而是角色定位已有认知基础。"}]},
+{"id":"s2","number":"02","short":"机制差异","title":"与其他自走棋的机制差异","intro":"从玩法与新手引导，分析错位竞争的定位。","paragraphs":[
+{"id":"p04","source":"2.1 · ①","title":"从凑羁绊，转向棋手与棋子的配合","kind":"机制描述，据稿件","visual":"gears","text":"对比云顶之弈、金铲铲，万象棋加入了棋手系统，棋手技能可以影响战场。棋子不再只是按传统自走棋的方式凑羁绊，而是通过不同棋子的效果，与棋手技能配合构筑阵容，再提升棋子等级，形成一种养成模式。"},
+{"id":"p05","source":"2.1 · ②","title":"自走棋框架下的肉鸽式养成","kind":"玩法归纳","visual":"rogue","text":"万象棋常被概括为金铲铲与炉石酒馆战棋融合的自走棋。其玩法更接近自走棋框架下的肉鸽式养成：棋手升级给出的天赋三选一，与肉鸽升级三选一结构相似；养成方式转为棋子等级成长，使体验重心从自走棋的策略博弈，移向肉鸽式的数值养成。"},
+{"id":"p06","source":"2.1 · ③","title":"阵营是地基，协同养成才是主体","kind":"机制与反馈分析","visual":"foundation","text":"数值养成有助于强化成长感知与成就反馈。镜头调度、高光动作和特效进一步强化观感。阵容成型不再主要是凑够羁绊数量，而是把阵营作为地基，依靠棋手、棋子与锦囊牌的配合提升等级：体验从“集卡”，变成了“搭齿轮”。"},
+{"id":"p08","source":"2.1 · ⑤","title":"反馈从“抽到关键牌”，移到“养到节点”","kind":"反馈机制分析","visual":"feedback","text":"传统自走棋的关键反馈，是抽到关键牌的瞬间，主要靠运气；万象棋把反馈重心移到养成节点，主要靠投入。前者是随机抽卡反馈，后者是养成积累反馈。后者可能降低随机性带来的负面情绪，但需要更长的对局来兑现，也可能是单局时长难以缩短的原因之一。"},
+{"id":"p09","source":"2.1 · ⑥","title":"装备更自由，代价是部分深度","kind":"装备机制与利弊分析","visual":"equipment","text":"装备可以随意切换、拆卸，小件可以直接合成成装。对比金铲铲需要两个小件合成、拆卸也有成本，万象棋降低了记忆与操作成本。但策略深度、耐玩性和玩家可开发的空间，也可能一起降低。"},
+{"id":"p10","source":"2.1 · ⑦","title":"棋手不是头像，而是战术模板","kind":"机制描述与战术归纳","visual":"commander","text":"棋手不只是头像，而是带有全局技能、等级、专属天赋和秘技任务的角色，直接影响本局的玩法走向。棋手系统本质上，是把角色做成一个战术模板，让开局选择不只是选外观，而是选择一套后续构筑方向。"},
+{"id":"p11","source":"2.1 · ⑧","title":"选秀变拍卖：主动权与弱势补偿共存","kind":"规则据稿件；拍卖机制分析","visual":"auction","text":"传统自走棋选秀，让低血量玩家优先挑选，对劣势方友好；优势方则需要等待，所需卡牌也可能被其他玩家先选走。万象棋改成拍卖会：所有人同时出价，价高者得，竞拍失败也不扣能量。\n这一设计减少优势方被动等待，又增加了心理博弈。竞拍的能量进入分红池，血量越低分得越多，为弱势方提供补偿。"},
+{"id":"p12","source":"2.2 · ①","title":"首次推荐与情感连接","kind":"新手规则据稿件，未独立核验","visual":"topfive","text":"万象棋用 AI 陪伴引导与新手剧本承接新手。第一次对局预设了三套阵容剧本，并读取玩家王者荣耀账号里英雄熟练度或战力的 TOP5，赋予阵营权重，再据此选择灵宝推荐的阵容剧本。熟悉或偏好的英雄，有助于提高推荐阵容的接受度，初步建立情感连接。"},
+{"id":"p13","source":"2.2 · ②","title":"无账号默认三分，突出首局成长反馈","kind":"新手规则与反馈分析；等级未核验","visual":"growth","text":"如果没有王者账号，则默认推荐三分。在低阻力的新手剧本环境里，三分阵容有助于展示成长性与观赏性。剧本默认最后培养吕布，吕布到 100 级后的技能镜头变化，可强化成长节点的视觉反馈。"},
+{"id":"p14","source":"2.2 · ③","title":"动态供给，而非固定操作节点","kind":"70% 为原稿陈述，未核验；段位差异未确认","visual":"supply","text":"传统新手剧本大多采用固定逻辑，安排特定内容出现在固定节点。万象棋采用动态安排，保留自主操作，通过伪随机动态供给维持体验一致性。"},
+{"id":"p15","source":"2.2 · ④","title":"灵宝陪伴提示，保留自主选择","kind":"引导机制与接受度分析","visual":"companion","text":"相较传统强引导，灵宝 AI 采用朋友式陪伴，用口语和光环闪动提醒，但具体怎么选仍由玩家决定。玩家无需点击指定位置才能继续操作。提示用于解释棋子效果，保留理解后的自主选择，有助于降低对强制教程的抵触。"},
+{"id":"p16","source":"2.2 · 总结","title":"错位竞争，而非正面替代","kind":"定位分析；碎片适配与长对局存在张力","visual":"position","text":"王者万象棋不是再做一个金铲铲，而是用 IP 认知加机制差异化，切入“轻度用户 + 王者存量”。定位与改动方向自洽：多数改动都在降低计算与记忆负担。\n自走棋用户可能存在重合，但玩法预期不同。万象棋用养成反馈替代部分端游自走棋的计算深度，降低硬核门槛，以适配移动端碎片场景。核心是错位竞争，而不是正面替代；这也类似王者荣耀降低端游 MOBA 的硬核门槛来适配移动用户的路径。但降低负担，并不自动解决单局偏长问题。"}]},
+{"id":"s3","number":"03","short":"系统减负","title":"系统减负：选择、经济与装备","intro":"推荐、经济和装备，分别削减选择起步、计算和记忆操作成本。","paragraphs":[
+{"id":"p17","source":"3.1","title":"AI 推荐与选择提示","kind":"辅助决策分析","visual":"ai","text":"AI 的阵容推荐和选择提示，有助于减少决策起步时的负担。辅助决策效果仍受阵容理解、操作与对局环境影响，不能保证段位提升。"},
+{"id":"p18","source":"3.2","title":"经济做减法，削弱领先者复利","kind":"经济规则据稿件，未独立核验","visual":"economy","text":"能量收入采用每回合固定收入，取消利息，减少储蓄带来的复利优势。卖出通常只回收 1 能量；连胜与连败奖励也取消。整体方向是削弱领先者的复利效应，让玩家减少存钱收益、连胜连败等经济计算。"},
+{"id":"p19","source":"3.3","title":"装备做减法，取消合成树","kind":"装备规则据稿件","visual":"recipe","text":"小件直接合成成装，可以随意拆卸，没有传统合成树。减负对象是配方记忆与操作成本；易用性提升并不代表策略深度没有损失。"}]},
+{"id":"s4","number":"04","short":"商业化","title":"外观、收藏与身份消费","intro":"从基础付费点，到交易行，再到潮玩式分层与 VIP 身份表达。","paragraphs":[
+{"id":"p20","source":"4 · ①","title":"不卖战斗属性，卖外观表现","kind":"付费规则据稿件；金额为非官方估算","visual":"cosmetic","text":"所有付费内容均为外观，不提供数值或战斗属性加成。付费点包括英雄或棋手皮肤、专属棋盘、头像边框、交互动效、定制收藏卡、称号和攻击特效。\n棋手皮肤主要通过直购与活动抽奖，棋盘一般通过直购与抽奖夺宝获得，估算典藏皮肤抽取保底约为 1560 元，与金铲铲价格接近。"},
+{"id":"p21","source":"4 · ②","title":"交易行，让特别商品形成流通市场","kind":"交易机制与资源调控分析","visual":"market","text":"交易行用于流通特别商品，例如棋盘编号、卡牌的卡面动画升级和部分小道具，商品价格随市场浮动。玩家上架需要支付费用，具有手续费性质。\n官方还会发布实物周边拍卖，使用游戏内钻石货币。交易行可作为游戏内资源与道具的调控系统。"},
+{"id":"p22","source":"4 · ③","title":"限定编号、颜色与款式，强化身份识别","kind":"潮玩与盲盒商业化类比","visual":"identity","text":"万象棋的商业化逻辑，与潮玩和卡牌盲盒相似：利用限定的特殊编号、颜色、款式区分品阶，让不同付费程度的玩家呈现明显身份标识。例如特殊棋盘编号 66668888，可强化稀缺性与辨识度。"},
+{"id":"p23","source":"4 · ④","title":"VIP 权益逐级放大身份表达","kind":"等级权益与积分据稿件，未核验","visual":"vip","text":"VIP 系统也围绕身份表达搭建：V4 之前主要是小道具；V4 可定制个人 ID 后两位，V5 有专属皮肤，V6 有名片，V8 将 ID 定制扩展到四位并可组队分享皮肤，V10 则有棋盘共享与专属棋盘。\n游戏里 1 元等于 10 积分，V10 需要 20 万积分，按此比例折算是 2 万元。"}]},
+{"id":"s5","number":"05","short":"体验设计","title":"日常体验中的设计取舍","intro":"从大厅提醒，到段位分流，再到娱乐模式的反馈与资源循环。","paragraphs":[
+{"id":"p25","source":"5.1 · ①","title":"金黄提示替代红点：视觉统一与发现成本","kind":"界面视觉与可发现性分析","visual":"redpoints","media":"大厅完整截图：金色提示与银白灰 UI","text":"大厅采用潮玩风格与银白灰 UI，以金黄色提示替代红点，有助于保持视觉统一。\n柔和提示也可能增加发现成本，需要兼顾视觉协调与提醒的可发现性。"},
+{"id":"p26","source":"5.1 · ②","title":"灵宝统一入口，补足提示触达","kind":"入口整合分析；后续扩展存在风险","visual":"integrated","media":"灵宝奖励入口与人物系统入口截图","text":"大厅中央设置灵宝提示，可一键跳转活动并提示可领取的奖励。每个人物也对应一个系统入口，点击即可跳转，有助于缩短入口查找路径。\n后续版本内容持续叠加，可能增加大厅的信息密度与入口管理成本。"},
+{"id":"p27","source":"5.2","title":"王中王：无需小号的段位重启","kind":"机制据稿件，分流效果为推论","visual":"ladder","text":"上王者之后出现王中王系统，让玩家重新从低段位开始晋级，产生类似小号的效果。该机制可能分流不希望持续参与高段位对局的娱乐用户，也可支持与朋友组队，减少因段位差距而另建账号的需求。"},
+{"id":"p28","source":"5.3 · ①","title":"娱乐模式，进一步强化成长反馈","kind":"轮换规则据稿件；模式机制分析","visual":"modes","media":"钻石狂潮或娱乐玩法入口截图","text":"娱乐副玩法每两周轮换一个，另有常驻的钻石狂潮。相对常规对局，钻石狂潮节奏更快、养成更容易，进一步强化了成长反馈。"}]},
+{"id":"s6","number":"06","short":"优劣风险","title":"短期体验优势，与长线风险并存","intro":"低入门门槛不等于长期耐玩性，需要兼顾内容消耗、平衡与社交协作。","paragraphs":[
+{"id":"p30","source":"6.1","title":"优势：认知、引导、新鲜感与关系链","kind":"产品优势分析","visual":"advantages","text":"王者 IP 有助于降低认知门槛，AI 引导有助于减少入门阻力，但不代表完全不需要学习新规则。差异化玩法提供新鲜感，打通王者荣耀社交体系则可利用已有关系链。"},
+{"id":"p31","source":"6 · 缺点①","title":"时长仍偏长，存在内容消耗风险","kind":"时长与耐玩性风险分析","visual":"consumption","text":"原稿描述单局时长比金铲铲短，但仍偏长，具体时长尚未核验。策略空间缩减可能影响耐玩性；当有效阵容选择有限时，内容更新存在跟不上玩法消耗的风险。"},
+{"id":"p32","source":"6 · 缺点②","title":"棋手绑定，让平衡与失败归因更复杂","kind":"平衡风险分析","visual":"balance","text":"棋手与阵容绑定较深，可能增加平衡调整难度。偏即时战力与偏长线运营的棋手，可能拉开强度；选择非强势棋手时，也可能增加失败挫败感。不同成长时机的路线，不一定能靠简单数值调整平衡。"},
+{"id":"p33","source":"6 · 缺点③","title":"换阵成本高，容错前置到开局","kind":"阵容转型风险分析","visual":"switch","text":"对比金铲铲，万象棋换阵成本更高。一旦开始培养某个方向，中途改道成本较高，容错空间可能更多集中在开局几回合的选择中。容易进入，不代表中途容易转向。"},
+{"id":"p34","source":"6 · 缺点④","title":"打通社交，不等于形成局内合作","kind":"社交机制与长线运营风险分析","visual":"social","text":"组队的有分同享主要提供分数兜底，不同于金铲铲组排通过互相给牌形成玩法联动；万象棋里组队玩家仍是对手，局内协作有限。\n打通关系链不等于形成持续的局内合作。若内容消耗、平衡与转型问题未得到改善，长线运营存在风险。"}]},
+{"id":"s7","number":"07","short":"迁移启示","title":"可迁移的设计经验","intro":"从具体机制回到反馈、决策与提醒组织的设计原则。","paragraphs":[
+{"id":"p35","source":"7 · ①","title":"把负面归因，从运气移向成长投入","kind":"可迁移设计原则","visual":"attribution","text":"从运气反馈转向养成反馈，将关键反馈从“抽到关键牌”移到“养到节点”，有助于减少对运气或系统偏向的负面归因。代价是需要更长对局来兑现，类似肉鸽游戏常见的二三十分钟单局。"},
+{"id":"p36","source":"7 · ②","title":"做减法，要砍认知成本而不是决策数量","kind":"设计原则；实际深度损失仍需评估","visual":"decisions","text":"降低入门门槛，不等于降低深度。取消利息、装备统一合成、卡价统一，削减的是记忆和计算负担；应保留并加强阵容与时机决策。做减法要砍在认知成本上，而不是决策数量上。\n理想的减负方向，不代表产品已经完全实现了理想，仍需评估实际策略深度是否受损。"},
+{"id":"p37","source":"7 · ③","title":"集成奖励入口，统一提醒管理","kind":"UI 提醒组织原则","visual":"rewards","text":"相比分散的红点，集成奖励领取入口有助于减少提示分散与逐项查找的负担。提醒可以统一管理，但也要兼顾柔和提示的可发现性。"}]}]}
+</script>
+<script>
+'use strict';
+const data = JSON.parse(document.getElementById('report-data').textContent);
+const $ = id => document.getElementById(id);
+const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const paragraphs = data.sections.flatMap(section => section.paragraphs);
+// 需求描述是采集任务，不是已确认的实机证据；原始 JSON 保持不变。
+const materials = [
+  {paragraphId:'p02',title:'吕布：王者荣耀与万象棋技能对照',capture:'左右对照拼接图，展示吕布在两款游戏中的技能表现。',preferred:'image',duration:'左右等高拼接图',asset:'./img/左右对照拼接图_等高.png'},
+  {paragraphId:'p05',title:'棋手升级：天赋三选一',capture:'展示全副武装、虚构武装、三人游三个天赋选项及其说明。',preferred:'image',duration:'天赋三选一界面截图',asset:'./img/屏幕截图 2026-10-12 144251.png'},
+  {paragraphId:'p10',title:'棋手能力与秘技任务',capture:'棋手详情界面，展示角色能力与战术路线。',preferred:'image',duration:'棋手详情截图',asset:'./img/屏幕截图 2026-10-12 144158.png'},
+  {paragraphId:'p11',title:'拍卖出价与分红结算',capture:'拍卖界面，展示竞拍与分红机制。',preferred:'image',duration:'拍卖界面截图',asset:'./img/屏幕截图 2026-10-12 144622.png'},
+  {paragraphId:'p12',title:'灵宝第一次阵容推荐',capture:'首次阵容推荐与熟悉英雄的对应界面。',preferred:'image',duration:'阵容推荐截图',asset:'./img/屏幕截图 2026-10-12 154805.png'},
+  {paragraphId:'p13',title:'吕布成长与技能镜头',capture:'吕布养成与技能表现录屏。',preferred:'video',duration:'实机录屏',asset:'./img/bili_video_1791789895511.mp4'},
+  {paragraphId:'p14',title:'动态供给与新手构筑',capture:'新手对局与卡牌供给界面。',preferred:'image',duration:'对局界面截图',asset:'./img/屏幕截图 2026-10-10 114319.png'},
+  {paragraphId:'p15',title:'灵宝陪伴提示与自主操作',capture:'灵宝陪伴引导与玩家操作录屏。',preferred:'video',duration:'实机录屏',asset:'./img/bili_video_1791792438743(1).mp4'},
+  {paragraphId:'p20',title:'皮肤与棋盘外观展示',capture:'皮肤与棋盘外观及获取界面。',preferred:'image',duration:'外观展示截图',asset:'./img/Screenshot_2026-10-12-16-22-44-827_com.tencent.tmgp.osgame.jpg'},
+  {paragraphId:'p21',title:'交易行：商品与上架费用',capture:'交易行商品界面。',preferred:'image',duration:'交易行截图',asset:'./img/Screenshot_2026-10-12-16-22-14-787_com.tencent.tmgp.osgame.jpg'},
+  {paragraphId:'p22',title:'编号、品阶与身份表达',capture:'编号与收藏品展示界面。',preferred:'image',duration:'编号与收藏截图',asset:'./img/Screenshot_2026-10-12-16-21-39-124_com.tencent.tmgp.osgame.jpg'},
+  {paragraphId:'p23',title:'VIP 权益与积分说明',capture:'VIP 权益展示界面。',preferred:'image',duration:'VIP 权益截图',asset:'./img/Screenshot_2026-10-12-16-23-22-898_com.tencent.tmgp.osgame.jpg'},
+  {paragraphId:'p25',title:'银白大厅与金黄提示',capture:'完整大厅截图，清晰呈现银白灰 UI 与金黄提醒位置；同时提供提醒局部细节，不新增红点对照仿真界面。',preferred:'image',duration:'大厅完整截图',asset:'./img/Screenshot_2026-10-12-16-20-55-419_com.tencent.tmgp.osgame.jpg'},
+  {paragraphId:'p26',title:'灵宝统一奖励入口与系统跳转',capture:'从大厅灵宝提示进入可领奖励 / 活动，再展示人物对应系统入口跳转，完整呈现提示与入口的对应关系。',preferred:'image',duration:'灵宝入口截图',asset:'./img/屏幕截图 2026-10-12 164130.png'},
+  {paragraphId:'p27',title:'王中王入口与重新爬升',capture:'王者段位后的王中王入口、规则说明和选择后段位界面；若可组队，补充对应段位限制说明，不用虚构低段位阶梯替代。',preferred:'image',duration:'王中王入口截图',asset:'./img/Screenshot_2026-10-12-16-21-07-982_com.tencent.tmgp.osgame.jpg'},
+  {paragraphId:'p28',title:'钻石狂潮：入口与成长节奏',capture:'娱乐模式入口、钻石狂潮模式说明与一段真实成长片段；界面显示常驻或轮换规则时一并保留，不新增轮换日历。',preferred:'image',duration:'娱乐模式入口截图',asset:'./img/Screenshot_2026-10-12-16-23-02-940_com.tencent.tmgp.osgame.jpg'}
+].map((item, index) => ({id:'m'+String(index+1).padStart(2,'0'),status:item.asset?'已提供':'尚未提供',formats:['MP4','WebM','PNG','JPEG','WebP'],ratio:'建议 16:9，1920×1080 或以上；长图 / 局部细节可保留原比例',...item}));
+const materialByParagraph = new Map(materials.map(item => [item.paragraphId,item]));
+const localMedia = new Map(materials.filter(item => item.asset).map(item => [item.id,{url:item.asset,type:item.preferred==='video'?'video':'image',name:item.title,persistent:true}]));
+const pendingImports = new Map();
+// 只在本章节内继承素材；开头无图时使用本章第一张。
+const chapterStories = data.sections.map(section => {
+  let previous=section.paragraphs.map(p => materialByParagraph.get(p.id)).find(Boolean)||null;
+  const mapping=section.paragraphs.map(p => {
+    previous=materialByParagraph.get(p.id)||previous;
+    return previous;
+  });
+  return {section,mapping,index:-1,materialId:undefined,visible:false,node:null,articles:[]};
+});
+const inheritedMaterialByParagraph = new Map(chapterStories.flatMap(story => story.section.paragraphs.map((p,index) => [p.id,story.mapping[index]])));
+function placeholder(item) {
+  return '<div class="empty-media"><b>素材尚未提供</b><span>'+esc(item.title)+'</span><small>'+item.id.toUpperCase()+' / '+(item.preferred==='video'?'实机录屏待补':'实机截图待补')+' · 点击查看采集要求 ↗</small></div>';
+}
+function previewMarkup(item, enlarged, printing=false) {
+  const media = localMedia.get(item.id);
+  if (!media) return placeholder(item);
+  if (media.type==='video') return '<video playsinline'+(printing?'':' autoplay')+' loop muted preload="'+(printing?'auto':'metadata')+'" src="'+esc(media.url)+'" aria-label="'+esc(item.title+' · 本地视频预览')+'"></video>';
+  return '<img src="'+esc(media.url)+'" alt="'+esc(item.title+' · 用户本地图片预览'+(enlarged?'，放大展示':''))+'">';
+}
+function mediaMarkup(item) {
+  return '<div class="media-window">'+previewMarkup(item,false)+'</div>';
+}
+function printMediaMarkup(item) {
+  return '<figure class="print-media" id="print-'+item.id+'">'+previewMarkup(item,false,true)+'</figure>';
+}
+function neutralCover(section) {
+  return '<div class="media-window"><div class="neutral-cover"><span aria-hidden="true">'+section.number+'</span><h3>'+esc(section.title)+'</h3></div></div>';
+}
+function renderReport() {
+  document.querySelector('.nav').innerHTML='<a href="#overview">速览</a>'+data.sections.map(s => '<a href="#'+s.id+'">'+esc(s.short)+'</a>').join('');
+  $('report').innerHTML=chapterStories.map(story => {
+    const s=story.section;
+    const first=story.mapping[0];
+    return '<section class="section" id="'+s.id+'"><header class="section-head"><div class="kicker">专题 '+s.number+' / '+esc(s.short)+'</div><h2>'+esc(s.title)+'</h2><p>'+esc(s.intro)+'</p></header><div class="chapter-scene"><div class="chapter-stage"><aside class="sticky-media" aria-label="'+esc(s.short)+'：当前素材"><figure class="media" id="chapter-media-'+s.id+'">'+(first?mediaMarkup(first):neutralCover(s))+'</figure></aside><div class="story-stack">'+s.paragraphs.map((p,index) => {
+      const item=materialByParagraph.get(p.id);
+      return '<article class="paragraph" id="'+p.id+'" tabindex="0"><div class="para-head"><a class="serial" href="#'+p.id+'" aria-label="本章亮点 '+(index+1)+' / '+s.paragraphs.length+'">'+(index+1)+' / '+s.paragraphs.length+'</a></div><div class="story-copy"><h3>'+esc(p.title)+'</h3><p class="prose">'+esc(p.text)+'</p></div>'+(item?printMediaMarkup(item):'')+'</article>';
+    }).join('')+'</div></div></section>';
+  }).join('')+'<div class="end">做减法要砍在认知成本上，<br>而不是决策数量上。</div>';
+  chapterStories.forEach(story => {
+    story.node=$(story.section.id);
+    story.articles=story.section.paragraphs.map(p => $(p.id));
+    story.index=-1;story.materialId=story.mapping[0]?.id||null;story.visible=false;
+  });
+}
+renderReport();
+let toastTimer;
+function toast(text) {
+  $('toast').textContent=text;
+  $('toast').classList.add('visible');
+  clearTimeout(toastTimer);
+  toastTimer=setTimeout(() => $('toast').classList.remove('visible'),3500);
+}
+function exportJSON(object, filename) {
+  const url=URL.createObjectURL(new Blob([JSON.stringify(object,null,2)],{type:'application/json;charset=utf-8'}));
+  const link=document.createElement('a');
+  link.href=url;link.download=filename;
+  document.body.appendChild(link);link.click();link.remove();
+  setTimeout(() => URL.revokeObjectURL(url),1000);
+}
+function structuredData() {
+  return {...data,meta:{...data.meta,version:'滚动联动专题 4.0',policy:'正文完整可见；素材按专题内段落滚动联动，缺图段继承本章上一素材，开头使用本章第一素材；无素材专题使用中性封面；规则与数值未独立核验',reference:'https://weekly-news.doc.nie.netease.com/m9w3/',localPreview:'只在本机临时预览，不上传，刷新丢失；导出不含本地文件、文件名或 blob URL',materialRequirements:materials},sections:data.sections.map(s => ({...s,paragraphs:s.paragraphs.map(p => ({...p,displayType:inheritedMaterialByParagraph.get(p.id)?'滚动联动素材':'章节中性封面',materialRequirement:materialByParagraph.get(p.id)||null,displayMaterialId:inheritedMaterialByParagraph.get(p.id)?.id||null}))}))};
+}
+const dialog=$('mediaDialog');
+let currentIndex=-1;
+let returnFocus=null;
+function pauseVideos(root) { if(root) root.querySelectorAll('video').forEach(video => video.pause()); }
+function playVideos(root) {
+  if (!root) return;
+  root.querySelectorAll('video').forEach(video => {
+    video.muted=true;
+    if (!video.paused) return;
+    try { const promise=video.play();if(promise&&promise.catch) promise.catch(() => {}); } catch (error) { /* 浏览器拒绝自动播放时保留原生视频画面。 */ }
+  });
+}
+function updateChapterMedia(story, index, force=false) {
+  const item=story.mapping[index];
+  const id=item?.id||null;
+  const slot=$('chapter-media-'+story.section.id);
+  if (force||id!==story.materialId) {
+    pauseVideos(slot);
+    const replaceFocus=returnFocus&&slot.contains(returnFocus);
+    slot.innerHTML=item?mediaMarkup(item):neutralCover(story.section);
+    if (replaceFocus) returnFocus=slot.querySelector('[data-material]')||document.querySelector('.brand');
+    story.materialId=id;
+    slot.querySelector('.media-window').classList.add('is-changing');
+  }
+  if(index!==story.index) {
+    story.articles.forEach((node,i) => {
+      const active=i===index;
+      if(!active&&node.contains(document.activeElement)) story.articles[index].focus({preventScroll:true});
+      node.classList.toggle('is-current',active);
+      node.setAttribute('aria-hidden',String(!active));
+      node.inert=!active;
+    });
+    story.index=index;
+  }
+  if(story.visible&&!dialog.open) playVideos(slot);else pauseVideos(slot);
+}
+function refreshMaterial(id) {
+  const item=materials.find(material => material.id===id);
+  chapterStories.forEach(story => {
+    if(story.materialId===id) updateChapterMedia(story,Math.max(0,story.index),true);
+  });
+  const printSlot=$('print-'+id);
+  if(printSlot) {pauseVideos(printSlot);printSlot.innerHTML=previewMarkup(item,false,true);}
+}
+function renderDialog() {
+  pauseVideos(dialog);
+  if (currentIndex<0) {
+    $('dialogTitle').textContent='素材需求汇总 / '+materials.length+' 项';
+    $('dialogBody').innerHTML='<p class="notice">点击条目查看具体镜头、格式与时长要求。</p><button type="button" data-export-materials>导出素材清单 JSON ↗</button><ol class="material-list">'+materials.map(item => '<li><button type="button" data-material="'+item.id+'">'+item.id.toUpperCase()+' / '+esc(item.title)+' ↗</button><small>'+item.paragraphId+' · '+(item.asset?'已提供':localMedia.has(item.id)?'已有本地临时预览':'尚未提供')+' · '+esc(item.duration)+'</small></li>').join('')+'</ol>';
+    return;
+  }
+  const item=materials[currentIndex];
+  $('dialogTitle').textContent=item.id.toUpperCase()+' / '+item.title;
+  $('dialogBody').innerHTML='<div class="dialog-preview">'+previewMarkup(item,true)+'</div><dl class="requirements"><dt>状态 / 对应段落</dt><dd>'+(item.asset?'已提供':localMedia.has(item.id)?'当前为本机临时预览':'尚未提供')+' · '+item.paragraphId+'</dd><dt>需要采集的内容</dt><dd>'+esc(item.capture)+'</dd><dt>格式与画幅</dt><dd>'+item.formats.join(' / ')+'。'+esc(item.ratio)+'</dd><dt>时长与清晰度</dt><dd>'+esc(item.duration)+'；字幕、技能、规则与数值文字不要被裁切。注明版本与录制日期，个人信息请先脱敏。</dd></dl><label class="local-import">导入本地图片 / 视频预览（只本机、不上传，刷新丢失）<input id="localFile" type="file" accept="image/png,image/jpeg,image/webp,video/mp4,video/webm,.png,.jpg,.jpeg,.webp,.mp4,.webm" data-import="'+item.id+'"></label><div class="dialog-foot"><button type="button" data-step="-1"'+(currentIndex===0?' disabled':'')+'>← 前一素材</button><button type="button" data-summary>需求汇总</button><button type="button" data-step="1"'+(currentIndex===materials.length-1?' disabled':'')+'>后一素材 →</button></div><p class="notice">左右方向键切换素材（文件输入与视频操作不拦截） · Esc 或 × 关闭。视频自动静音循环播放。</p>';
+  playVideos(dialog);
+}
+function openDialog(index, trigger) {
+  currentIndex=index;
+  chapterStories.forEach(story => pauseVideos($('chapter-media-'+story.section.id)));
+  if (!dialog.open) returnFocus=trigger||document.activeElement;
+  renderDialog();
+  if (!dialog.open) dialog.showModal();
+  playVideos(dialog);
+  $('dialogClose').focus();
+}
+function stepMaterial(direction) {
+  const next=currentIndex+direction;
+  if (currentIndex<0||next<0||next>=materials.length) return;
+  currentIndex=next;renderDialog();$('dialogClose').focus();
+}
+$('dialogClose').addEventListener('click',() => dialog.close());
+dialog.addEventListener('cancel',() => pauseVideos(dialog));
+dialog.addEventListener('close',() => {
+  pauseVideos(dialog);
+  const target=returnFocus;returnFocus=null;
+  if (target&&target.isConnected) target.focus({preventScroll:true});else document.querySelector('.brand').focus({preventScroll:true});
+  onScroll();
+});
+dialog.addEventListener('keydown',event => {
+  if (event.target.closest('input,video')||event.altKey||event.ctrlKey||event.metaKey) return;
+  if (currentIndex>=0&&(event.key==='ArrowLeft'||event.key==='ArrowRight')) {
+    event.preventDefault();stepMaterial(event.key==='ArrowLeft'?-1:1);
+  }
+});
+function handleMaterialClick(event) {
+  const button=event.target.closest('[data-material]');
+  if (!button) return;
+  const index=materials.findIndex(item => item.id===button.dataset.material);
+  if (index>=0) openDialog(index,button);
+}
+$('report').addEventListener('click',handleMaterialClick);
+dialog.addEventListener('click',handleMaterialClick);
+dialog.addEventListener('click',event => {
+  const step=event.target.closest('[data-step]');
+  if (step&&!step.disabled) stepMaterial(Number(step.dataset.step));
+  if (event.target.closest('[data-summary]')) {currentIndex=-1;renderDialog();$('dialogClose').focus();}
+  if (event.target.closest('[data-export-materials]')) exportJSON({title:data.meta.title,policy:'采集需求，不是已确认实机证据；本地预览不导出',materials},'王者万象棋-素材需求清单.json');
+});
+function importLocal(input) {
+  const file=input.files&&input.files[0];
+  if (!file) return;
+  const id=input.dataset.import;
+  const types={'image/png':'image','image/jpeg':'image','image/webp':'image','video/mp4':'video','video/webm':'video'};
+  const extensions={png:'image',jpg:'image',jpeg:'image',webp:'image',mp4:'video',webm:'video'};
+  const type=types[file.type]||(!file.type?extensions[file.name.split('.').pop().toLowerCase()]:null);
+  input.value='';
+  if (!type) {toast('请选择 MP4/WebM 视频或 PNG/JPEG/WebP 图片。');return;}
+  const url=URL.createObjectURL(file);
+  const token={};pendingImports.set(id,token);
+  const probe=type==='image'?new Image():document.createElement('video');
+  if (type==='video') probe.preload='metadata';
+  let settled=false;
+  function finish(ok) {
+    if (settled) return;settled=true;
+    probe.removeEventListener(type==='image'?'load':'loadedmetadata',loaded);
+    probe.removeEventListener('error',failed);
+    if (type==='video') {probe.pause();probe.removeAttribute('src');probe.load();}
+    if (!ok||pendingImports.get(id)!==token) {
+      URL.revokeObjectURL(url);
+      if (pendingImports.get(id)===token) {pendingImports.delete(id);toast('素材无法读取，检查文件内容或浏览器编码支持。');}
+      return;
+    }
+    pendingImports.delete(id);
+    const old=localMedia.get(id);
+    localMedia.set(id,{url,type,name:file.name});
+    refreshMaterial(id);
+    if (dialog.open&&currentIndex>=0&&materials[currentIndex].id===id) {renderDialog();playVideos(dialog);$('dialogClose').focus();}
+    if (old&&!old.persistent) URL.revokeObjectURL(old.url);
+    toast('本地预览已导入；不上传、不保存，刷新丢失。');
+  }
+  function loaded() {finish(true);}
+  function failed() {finish(false);}
+  probe.addEventListener(type==='image'?'load':'loadedmetadata',loaded);
+  probe.addEventListener('error',failed);
+  probe.src=url;
+  if (type==='video') probe.load();
+}
+dialog.addEventListener('change',event => {if(event.target.matches('[data-import]')) importLocal(event.target);});
+$('topButton').addEventListener('click',() => window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}));
+const sections=[...document.querySelectorAll('.section')];
+const links=[...document.querySelectorAll('.nav a')];
+let queued=false;
+let navbarHeight=72;
+let pageZoom=1.25;
+let printing=false;
+function updateNavbarHeight() {
+  pageZoom=parseFloat(getComputedStyle(document.body).zoom)||1;
+  navbarHeight=document.querySelector('.top').getBoundingClientRect().height;
+  const available=Math.max(100,(window.innerHeight-navbarHeight)/pageZoom-24);
+  const mobile=window.matchMedia('(max-width:800px)').matches;
+  const root=document.documentElement.style;
+  root.setProperty('--nav-height',navbarHeight/pageZoom+'px');
+  root.setProperty('--stage-height',available+'px');
+  root.setProperty('--media-height',(mobile?available*.38:available)+'px');
+  root.setProperty('--copy-height',(mobile?available*.62-12:available)+'px');
+  const step=Math.max(200,Math.min(350,available*.5));
+  chapterStories.forEach(story => {
+    story.scene=story.node.querySelector('.chapter-scene');
+    story.stage=story.node.querySelector('.chapter-stage');
+    story.node.style.setProperty('--scene-height',(available+story.articles.length*step)+'px');
+  });
+}
+function onScroll() {
+  queued=false;
+  if(printing) return;
+  let sectionId='overview';
+  chapterStories.forEach(story => {
+    const bounds=story.scene.getBoundingClientRect();
+    const stageHeight=story.stage.getBoundingClientRect().height;
+    const top=navbarHeight+12*pageZoom;
+    const distance=Math.max(1,bounds.height-stageHeight);
+    const position=Math.max(0,Math.min(1,(top-bounds.top)/distance));
+    const index=Math.min(story.articles.length-1,Math.floor(position*story.articles.length));
+    story.visible=bounds.top<window.innerHeight&&bounds.bottom>top;
+    updateChapterMedia(story,index);
+    if(story.node.getBoundingClientRect().top<navbarHeight+80) sectionId=story.section.id;
+  });
+  links.forEach(link => {
+    const active=link.getAttribute('href')==='#'+sectionId;
+    link.classList.toggle('active',active);
+    if (active) link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');
+  });
+}
+function queueScroll() {if(!queued){queued=true;requestAnimationFrame(onScroll);}}
+function navigateHash() {
+  const id=location.hash.slice(1);
+  const story=chapterStories.find(story => story.section.paragraphs.some(p => p.id===id));
+  if(!story) return;
+  const index=story.section.paragraphs.findIndex(p => p.id===id);
+  const bounds=story.scene.getBoundingClientRect();
+  const distance=bounds.height-story.stage.getBoundingClientRect().height;
+  const top=window.scrollY+bounds.top-navbarHeight-12*pageZoom+distance*(index+.15)/story.articles.length;
+  window.scrollTo({top,behavior:'instant'});
+  onScroll();
+}
+window.addEventListener('scroll',queueScroll,{passive:true});
+window.addEventListener('hashchange',navigateHash);
+document.addEventListener('click',event => {
+  const anchor=event.target.closest('a[href^="#"]');
+  if(anchor&&anchor.hash===location.hash) navigateHash();
+});
+window.addEventListener('resize',() => {updateNavbarHeight();queueScroll();});
+if ('ResizeObserver' in window) {
+  const navbarObserver=new ResizeObserver(() => {if(!printing){updateNavbarHeight();queueScroll();}});
+  navbarObserver.observe(document.querySelector('.top'));
+}
+updateNavbarHeight();
+chapterStories.forEach(story => updateChapterMedia(story,0));
+document.body.classList.add('scenes-ready');
+onScroll();navigateHash();
+if (document.fonts) document.fonts.ready.then(() => {updateNavbarHeight();queueScroll();});
+window.addEventListener('beforeprint',() => {
+  printing=true;
+  pauseVideos($('report'));pauseVideos(dialog);
+  chapterStories.forEach(story => story.articles.forEach(node => {node.inert=false;node.removeAttribute('aria-hidden');}));
+});
+window.addEventListener('afterprint',() => {
+  printing=false;
+  chapterStories.forEach(story => {story.index=-1;});
+  updateNavbarHeight();onScroll();
+});
+window.addEventListener('beforeunload',() => localMedia.forEach(media => {if(!media.persistent) URL.revokeObjectURL(media.url);}));
+</script>
+</body>
+</html>
